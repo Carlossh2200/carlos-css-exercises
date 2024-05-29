@@ -6,6 +6,7 @@
   font-size: 15px;
   color: rgb(247, 247, 247);
   cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .menu-title {
@@ -30,3 +31,28 @@ ul.dropdown-menu li:hover {
 }
 
 
+
+.dropdown-menu li{
+  color:black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-menu li:hover{
+  background-color: rgb(47, 46, 46);
+  color: white;
+}
+
+
+
+.dropdown-menu{
+  transform: scale(0);
+}
+
+.dropdown-container:hover .dropdown-menu{
+  display: block;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
